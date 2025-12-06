@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abogado de Sucesiones Cali | PEÑA&CARDONA ABOGADOS - Expertos en Herencias</title>
+    <meta name="description" content="Abogado especializado en sucesiones en Cali. Procesos de herencia, designación de curadores, apoyo judicial para discapacidad. PEÑA&CARDONA ABOGADOS con más de 15 años de experiencia.">
+    <meta name="keywords" content="abogado sucesiones cali, herencias cali, proceso sucesorio cali, curador cali, guardador cali">
+    
+    <!-- Schema Markup de Servicio Legal -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Abogado de Sucesiones en Cali - PEÑA&CARDONA ABOGADOS",
+        "description": "Servicios especializados en derecho sucesorio, procesos de herencia y designación de curadores en Cali",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Calle 5 #38A-08",
+            "addressLocality": "Cali",
+            "addressRegion": "Valle del Cauca",
+            "postalCode": "760001",
+            "addressCountry": "CO"
+        },
+        "telephone": "+573147727057",
+        "url": "https://www.abogadofamiliacali.com/abogado-sucesiones-cali.html",
+        "areaServed": ["Cali", "Palmira", "Candelaria", "Yumbo", "Jamundí"],
+        "serviceType": "Derecho de sucesiones",
+        "hasCredential": "Abogado especialista en sucesiones",
+        "priceRange": "$$"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(20, 40, 70, 0.96);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            padding: 1.2rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 3px;
+            font-family: 'Times New Roman', serif;
+            text-decoration: none;
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #c9a96e, #b8956b);
+            color: #142846;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(201, 169, 110, 0.3);
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(201, 169, 110, 0.4);
+            background: linear-gradient(135deg, #d4b078, #c9a96e);
+        }
+        
+        /* Breadcrumb */
+        .breadcrumb {
+            background: #f8f9fa;
+            padding: 2rem 0 1rem;
+            margin-top: 90px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .breadcrumb-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .breadcrumb-nav {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            color: #6c757d;
+        }
+        
+        .breadcrumb-nav a {
+            color: #c9a96e;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .breadcrumb-nav a:hover {
+            color: #142846;
+        }
+        
+        .breadcrumb-separator {
+            margin: 0 1rem;
+            color: #adb5bd;
+            font-weight: 300;
+        }
+        
+        .breadcrumb-current {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(20, 40, 70, 0.412), rgba(44, 62, 80, 0.434)), url('imagen.jpg') center/cover;
+            padding: 6rem 0;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, transparent 0%, rgba(20, 40, 70, 0.3) 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+            font-family: 'Times New Roman', serif;
+            line-height: 1.1;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            font-weight: 300;
+            opacity: 0.95;
+            line-height: 1.6;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #c9a96e, #b8956b);
+            color: #142846;
+            padding: 18px 36px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(201, 169, 110, 0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 18px 36px;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(201, 169, 110, 0.4);
+            background: linear-gradient(135deg, #d4b078, #c9a96e);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #c9a96e;
+            color: #c9a96e;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 6rem 0;
+            background: #f8f9fa;
+        }
+        
+        .services:nth-of-type(even) {
+            background: #ffffff;
+        }
+        
+        .service-category {
+            margin-bottom: 4rem;
+        }
+        
+        .category-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .services:nth-of-type(even) .category-content {
+            background: #f8f9fa;
+        }
+        
+        .category-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+        }
+        
+        .category-text {
+            padding: 4rem;
+        }
+        
+        .category-text h2 {
+            color: #142846;
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            font-family: 'Times New Roman', serif;
+        }
+        
+        .category-text p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin-bottom: 3rem;
+        }
+        
+        .service-features li {
+            color: #555;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 1rem;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .service-features li:before {
+            content: '✓';
+            color: #c9a96e;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .service-link {
+            color: #142846;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid #c9a96e;
+            padding-bottom: 5px;
+        }
+        
+        .service-link:hover {
+            color: #c9a96e;
+            transform: translateY(-1px);
+        }
+        
+        .category-image {
+            height: 100%;
+            min-height: 400px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .category-content:hover .service-img {
+            transform: scale(1.05);
+        }
+        
+        /* Content Section */
+        .content {
+            padding: 8rem 0;
+            background: white;
+        }
+        
+        .content-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 6rem;
+        }
+        
+        .content-intro p {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+        
+        /* Info Section */
+        .info-section {
+            background: #f8f9fa;
+            padding: 6rem 0;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+        
+        .info-content h3 {
+            color: #142846;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+        
+        .info-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        
+        .info-highlights {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .info-highlights h4 {
+            color: #142846;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        
+        .highlight-list {
+            list-style: none;
+        }
+        
+        .highlight-list li {
+            color: #555;
+            padding: 1rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            position: relative;
+            padding-left: 30px;
+            font-size: 1rem;
+        }
+        
+        .highlight-list li:before {
+            content: '▪';
+            color: #c9a96e;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        /* Areas Section */
+        .areas {
+            padding: 5rem 0;
+            background: white;
+            text-align: center;
+        }
+        
+        .areas h3 {
+            color: #142846;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+        
+        .areas-subtitle {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+        
+        .areas-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .area-item {
+            background: linear-gradient(135deg, #142846, #1e3a66);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 5px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(20, 40, 70, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .area-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(20, 40, 70, 0.3);
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 8rem 0;
+            background: linear-gradient(135deg, #142846, #1e3a66);
+            color: white;
+            text-align: center;
+        }
+        
+        .contact h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        
+        .contact-form {
+            max-width: 650px;
+            margin: 3rem auto 0;
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .form-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            padding: 18px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: 'Georgia', serif;
+            background: rgba(255,255,255,0.95);
+            color: #333;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            background: white;
+            box-shadow: 0 0 15px rgba(201, 169, 110, 0.3);
+        }
+        
+        .contact-form textarea {
+            grid-column: 1 / -1;
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #c9a96e, #b8956b);
+            color: #142846;
+            padding: 18px 35px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            justify-self: center;
+            min-width: 250px;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(201, 169, 110, 0.4);
+            background: linear-gradient(135deg, #d4b078, #c9a96e);
+        }
+        
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: white;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .whatsapp-float:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+        }
+        
+        /* Footer */
+        .footer {
+            background: #0f1419;
+            color: white;
+            text-align: center;
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer p {
+            margin-bottom: 0.8rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .footer p:first-child {
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .category-content {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            
+            .category-text {
+                padding: 3rem 2rem;
+            }
+            
+            .category-image {
+                min-height: 300px;
+                order: -1;
+            }
+            
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .form-group {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-container {
+                padding: 0 1rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .areas-list {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .breadcrumb-nav {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">PEÑA&CARDONA</a>
+            <a href="https://wa.me/573147727057?text=Hola,%20necesito%20consulta%20sobre%20sucesiones%20en%20Cali" target="_blank" class="contact-btn">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="breadcrumb-container">
+            <nav class="breadcrumb-nav">
+                <a href="index.html">Inicio</a>
+                <span class="breadcrumb-separator">/</span>
+                <span class="breadcrumb-current">Abogado de Sucesiones en Cali</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Abogado de Sucesiones en Cali</h1>
+            <p class="subtitle">Especialistas en procesos de herencia, sucesiones por muerte y designación de curadores en Cali y el Valle del Cauca. Más de 15 años de experiencia manejando procesos sucesorios con la dedicación y profesionalismo que su familia merece.</p>
+            
+            <div class="hero-buttons">
+                <a href="https://wa.me/573147727057?text=Hola,%20necesito%20consulta%20sobre%20sucesiones%20en%20Cali" target="_blank" class="btn-primary">
+                    <img src="whatsapp.png" alt="WhatsApp" style="width: 20px; height: 20px;">
+                    Consulta Gratuita
+                </a>
+                <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content" id="servicios">
+        <div class="container">
+            <div class="content-intro">
+                <p>En PEÑA&CARDONA ABOGADOS somos especialistas en derecho sucesorio con amplia experiencia en el manejo de procesos de herencia en Cali y el Valle del Cauca. Ofrecemos asesoría integral para la tramitación de sucesiones, designación de curadores y apoyo judicial para personas con discapacidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section 1 - Procesos de Sucesión -->
+    <section class="services" id="sucesion-muerte">
+        <div class="container">
+            <div class="service-category">
+                <div class="category-content">
+                    <div class="category-text">
+                        <h2>Procesos de Sucesión por Muerte en Cali</h2>
+                        <p>Manejamos integralmente los procesos de sucesión intestada y testamentaria, garantizando una distribución justa y legal de los bienes del causante. Nuestro equipo se encarga de todos los trámites necesarios ante notarías y juzgados.</p>
+                        <ul class="service-features">
+                            <li>Sucesión intestada (sin testamento)</li>
+                            <li>Sucesión testamentaria (con testamento)</li>
+                            <li>Inventario y avalúo de bienes</li>
+                            <li>Liquidación de herencia</li>
+                            <li>Adjudicación de bienes</li>
+                            <li>Registro de escrituras</li>
+                        </ul>
+                        <a href="procesos-sucesion-por-muerte-cali.html" class="service-link">Conocer más →</a>
+                    </div>
+                    <div class="category-image">
+                        <img src="sucesion-muerte.jpg" alt="Procesos de Sucesión por Muerte en Cali" class="service-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section 2 - Curador Guardador -->
+    <section class="services" id="curador-guardador">
+        <div class="container">
+            <div class="service-category">
+                <div class="category-content">
+                    <div class="category-image">
+                        <img src="curador-guardador.jpg" alt="Designación de Curador o Guardador en Cali" class="service-img">
+                    </div>
+                    <div class="category-text">
+                        <h2>Designación de Curador o Guardador de Menores de Edad en Cali</h2>
+                        <p>Brindamos asesoría especializada para la designación de curadores y guardadores cuando se requiere protección legal de menores de edad. Manejamos estos casos con especial sensibilidad y cuidado por el bienestar del menor.</p>
+                        <ul class="service-features">
+                            <li>Designación judicial de curador</li>
+                            <li>Designación de guardador</li>
+                            <li>Protección patrimonial del menor</li>
+                            <li>Representación legal especializada</li>
+                            <li>Seguimiento del proceso</li>
+                            <li>Asesoría continua</li>
+                        </ul>
+                        <a href="designacion-curador-guardador-menores-edad-cali.html" class="service-link">Conocer más →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section 3 - Apoyo Judicial Discapacidad -->
+    <section class="services" id="apoyo-discapacidad">
+        <div class="container">
+            <div class="service-category">
+                <div class="category-content">
+                    <div class="category-text">
+                        <h2>Apoyo Judicial para Personas con Discapacidad (Ley 1996 de 2019) en Cali</h2>
+                        <p>Ofrecemos servicios especializados en apoyo judicial para personas con discapacidad conforme a la nueva legislación. Garantizamos el respeto de su autonomía y capacidad jurídica mientras proporcionamos la protección legal necesaria.</p>
+                        <ul class="service-features">
+                            <li>Adjudicación judicial de apoyos</li>
+                            <li>Salvaguardias para evitar abusos</li>
+                            <li>Representación en procesos judiciales</li>
+                            <li>Protección patrimonial</li>
+                            <li>Asesoría familiar integral</li>
+                            <li>Seguimiento continuo del caso</li>
+                        </ul>
+                        <a href="apoyo-judicial-personas-discapacidad-ley-1996-cali.html" class="service-link">Conocer más →</a>
+                    </div>
+                    <div class="category-image">
+                        <img src="apoyo-discapacidad.jpg" alt="Apoyo Judicial para Personas con Discapacidad en Cali" class="service-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-content">
+                    <h3>¿Por qué elegirnos para su proceso de sucesión?</h3>
+                    <p>Los procesos sucesorios pueden ser complejos y emocionalmente difíciles. En PEÑA&CARDONA ABOGADOS entendemos la importancia de manejar estos casos con sensibilidad, profesionalismo y eficiencia.</p>
+                    <p>Nuestro equipo especializado en derecho sucesorio cuenta con más de 15 años de experiencia tramitando herencias en Cali y el Valle del Cauca. Conocemos todos los procedimientos notariales y judiciales necesarios para garantizar una sucesión exitosa.</p>
+                    <p>Ofrecemos acompañamiento integral desde la fase inicial hasta la adjudicación final de los bienes, asegurándonos de que todos los herederos reciban lo que legalmente les corresponde.</p>
+                </div>
+                
+                <div class="info-highlights">
+                    <h4>Ventajas de nuestro servicio</h4>
+                    <ul class="highlight-list">
+                        <li>Primera consulta gratuita</li>
+                        <li>Respuesta en máximo 24 horas</li>
+                        <li>Experiencia de más de 15 años</li>
+                        <li>Acompañamiento integral del proceso</li>
+                        <li>Tarifas transparentes y competitivas</li>
+                        <li>Atención personalizada y humana</li>
+                        <li>Conocimiento del derecho local</li>
+                        <li>Red de contactos especializados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas Section -->
+    <section class="areas">
+        <div class="container">
+            <h3>Áreas de Cobertura para Sucesiones</h3>
+            <p class="areas-subtitle">Atendemos procesos sucesorios en toda la región del Valle del Cauca</p>
+            
+            <div class="areas-list">
+                <div class="area-item">Cali</div>
+                <div class="area-item">Palmira</div>
+                <div class="area-item">Candelaria</div>
+                <div class="area-item">Yumbo</div>
+                <div class="area-item">Jamundí</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h3>Consulta Gratuita sobre Sucesiones</h3>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; margin-bottom: 2rem;">Contáctanos para una evaluación inicial de tu proceso sucesorio sin costo<br>Especialistas en herencias con respuesta en máximo 24 horas</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="text" name="apellido" placeholder="Apellido" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <input type="tel" name="telefono" placeholder="Teléfono" required>
+                </div>
+                <textarea name="mensaje" placeholder="Describe tu caso sucesorio (ubicación de bienes, número de herederos, etc.)..." required></textarea>
+                <button type="submit" class="submit-btn">Solicitar Consulta</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>ABOGADO DE SUCESIONES CALI - PEÑA&CARDONA ABOGADOS</strong></p>
+            <p>Especialistas en Derecho Sucesorio, Herencias y Procesos de Sucesión</p>
+            <p>WhatsApp: +57 314 772 7057 | Cali, Valle del Cauca, Colombia</p>
+            <p style="margin-top: 2rem; opacity: 0.7;">&copy; 2025 PEÑA&CARDONA ABOGADOS. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/573147727057?text=Hola,%20necesito%20consulta%20sobre%20sucesiones%20en%20Cali" target="_blank" class="whatsapp-float">
+        <img src="whatsapp.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+    </a>
+
+    <script>
+        // Formulario de contacto
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const nombre = formData.get('nombre');
+            const apellido = formData.get('apellido');
+            const email = formData.get('email');
+            const telefono = formData.get('telefono');
+            const mensaje = formData.get('mensaje');
+            
+            const whatsappMessage = `Hola, soy ${nombre} ${apellido}.%0A%0AConsulta sobre SUCESIONES:%0A%0AEmail: ${email}%0ATeléfono: ${telefono}%0A%0ADescripción del caso:%0A${mensaje}%0A%0AGracias.`;
+            
+            window.open(`https://wa.me/573147727057?text=${whatsappMessage}`, '_blank');
+        });
+        
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(20, 40, 70, 0.98)';
+            } else {
+                header.style.background = 'rgba(20, 40, 70, 0.96)';
+            }
+        });
+    </script>
+</body>
+</html>
