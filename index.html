@@ -718,6 +718,43 @@
                 align-items: center;
             }
         }
+
+        .hero-links {
+            margin-top: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+        }
+
+        .hero-link {
+            padding: 0.6rem 1.1rem;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            background: rgba(15, 23, 42, 0.65); /* tono oscuro semitransparente sobre el video */
+            color: #ffffff;
+            font-size: 0.9rem;
+            text-decoration: none;
+            white-space: nowrap;
+            backdrop-filter: blur(4px);
+            transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .hero-link:hover {
+            background: rgba(248, 250, 252, 0.95);
+            color: #0f172a;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.35);
+        }
+
+        /* Ajuste leve en pantallas pequeñas */
+        @media (max-width: 480px) {
+            .hero-link {
+                font-size: 0.8rem;
+                padding: 0.5rem 0.9rem;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -738,10 +775,35 @@
         </video>
 
         <div class="hero-content">
+
+            <!-- Botones de áreas específicas de familia -->
+            <div class="hero-links">
+                <a href="divorcio-cesacion-efectos-civiles-matrimonio-cali.html" class="hero-link">
+                    Divorcios
+                </a>
+                <a href="declaracion-union-marital-hecho-sociedad-patrimonial-cali.html" class="hero-link">
+                    Uniones maritales de hecho
+                </a>
+                <a href="conflictos-responsabilidad-parental-relaciones-familiares-cali.html" class="hero-link">
+                    Privación de patria potestad
+                </a>
+                <a href="custodia-cuidado-personal-hijos-menores-cali.html" class="hero-link">
+                    Custodia
+                </a>
+                <a href="autorizaciones-judiciales-materia-familia-cali.html" class="hero-link">
+                    Salidas del país
+                </a>
+            </div>
+            <br>
             <h1>Abogado de Familia Cali</h1>
+
             <p class="subtitle">
-                Estudio Jurídico Especializado en Derecho de Familia, Sucesiones y Servicios Legales en Cali, Palmira, Candelaria, Yumbo y Jamundí. 
-                Más de 15 años de experiencia protegiendo los derechos de las familias del Valle del Cauca.
+                Confíe su caso a un equipo con experiencia real dentro de los Juzgados de Familia.
+                Somos abogados y exfuncionarios de la Rama Judicial, con más de 20 años de trayectoria,
+                preparados para defender sus derechos con firmeza, profesionalismo y humanidad en procesos de divorcio,
+                uniones maritales de hecho, privación de patria potestad, alimentos, custodia y demás asuntos de derecho de familia.
+                <br><br>
+                Su familia merece una representación experta. Nosotros estamos aquí para ayudarle.
             </p>
 
             <div class="hero-buttons">
@@ -753,9 +815,12 @@
 
                 <a href="#servicios" class="btn-secondary">Ver Servicios</a>
             </div>
+
+            
         </div>
 
     </section>
+
 
 
     <!-- About Section -->
