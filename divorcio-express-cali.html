@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Divorcio Express en Cali por Mutuo Acuerdo. Trámite ágil ante notaría en 15 días. Honorarios fijos: 1 SMLV. Peña&Cardona Abogados - Especialistas en Derecho de Familia.">
+    <title>Divorcio Express Cali - Rápido, Seguro y Económico | Peña&Cardona Abogados</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(20, 40, 70, 0.96);
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+            padding: 1.2rem 0;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 3px;
+            font-family: 'Times New Roman', serif;
+        }
+        
+        .contact-btn {
+            background: linear-gradient(135deg, #c9a96e, #b8956b);
+            color: #142846;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(201, 169, 110, 0.3);
+        }
+        
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(201, 169, 110, 0.4);
+            background: linear-gradient(135deg, #d4b078, #c9a96e);
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 2rem;
+            margin-top: 90px;
+            background: linear-gradient(135deg, rgba(20, 40, 70, 0.95), rgba(44, 62, 80, 0.92)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23142846" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, transparent 0%, rgba(20, 40, 70, 0.3) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            z-index: 2;
+            position: relative;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #c9a96e, #b8956b);
+            color: #142846;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(201, 169, 110, 0.3);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+            font-family: 'Times New Roman', serif;
+            line-height: 1.2;
+        }
+
+        .hero h1 strong {
+            font-weight: 600;
+            color: #c9a96e;
+        }
+
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+
+        .hero-price {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #c9a96e;
+            margin: 2rem 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-price span {
+            font-size: 1.2rem;
+            color: white;
+            font-weight: 300;
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #c9a96e, #b8956b);
+            color: #142846;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(201, 169, 110, 0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(201, 169, 110, 0.4);
+            background: linear-gradient(135deg, #d4b078, #c9a96e);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 18px 40px;
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            border-radius: 3px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #c9a96e;
+            color: #c9a96e;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Info Section */
+        .info-section {
+            padding: 6rem 0;
+            background: white;
+        }
+
+        .section-title {
+            color: #142846;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            font-family: 'Times New Roman', serif;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            color: #666;
+            font-size: 1.2rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            line-height: 1.8;
+        }
+
+        /* Requirements Section */
+        .requirements {
+            padding: 6rem 0;
+            background: #f8f9fa;
+        }
+
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .requirement-card {
+            background: white;
+            padding: 3rem 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border-top: 4px solid #c9a96e;
+        }
+
+        .requirement-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+
+        .requirement-icon {
+            font-size: 2.5rem;
+            color: #c9a96e;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .requirement-card h3 {
+            color: #142846;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .requirement-card p {
+            color: #666;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        /* Process Section */
+        .process {
+            padding: 6rem 0;
+            background: white;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #142846, #1e3a66);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 8px 20px rgba(20, 40, 70, 0.2);
+        }
+
+        .step h3 {
+            color: #142846;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .step p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, #142846, #1e3a66);
+            color: white;
+        }
+
+        .benefits .section-title,
+        .benefits .section-subtitle {
+            color: white;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .benefit-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2.5rem 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .benefit-item h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .benefit-item p {
+            opacity: 0.9;
+            line-height: 1.7;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 6rem 0;
+            background: white;
+            text-align: center;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            padding: 4rem 3rem;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-box h2 {
+            color: #142846;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .cta-box p {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-item-icon {
+            font-size: 2rem;
+            color: #c9a96e;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #142846;
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-item a {
+            color: #666;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: #c9a96e;
+        }
+
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: white;
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .whatsapp-float:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f1419;
+            color: white;
+            text-align: center;
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .footer-info {
+            margin-bottom: 2rem;
+        }
+
+        .footer-info h3 {
+            color: #c9a96e;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .footer p {
+            margin-bottom: 0.5rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero-price {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .requirements-grid,
+            .process-steps,
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">PEÑA&CARDONA</div>
+            <a href="tel:+573225523211" class="contact-btn">Llamar Ahora</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Divorcio Express</div>
+            <h1>Divorcio Rápido, <strong>Seguro</strong> y al Mejor Costo en Cali</h1>
+            <p class="subtitle">¿Deseas terminar tu matrimonio de forma rápida, legal y sin complicaciones? Te acompañamos en cada paso del proceso.</p>
+            <div class="hero-price">
+                1 SMLV
+                <span>Honorarios fijos • Certificado en 15 días hábiles</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="https://wa.me/573225523211?text=Hola,%20necesito%20información%20sobre%20el%20Divorcio%20Express" class="btn-primary">📱 Consulta Gratis por WhatsApp</a>
+                <a href="tel:+573225523211" class="btn-secondary">📞 Llamar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Section -->
+    <section class="info-section">
+        <div class="container">
+            <h2 class="section-title">¿Qué es el Divorcio Express?</h2>
+            <p class="section-subtitle">
+                Es un trámite rápido, sencillo y completamente legal que permite disolver el matrimonio cuando ambos cónyuges están de acuerdo. Un proceso ágil ante notaría que termina el vínculo matrimonial de forma definitiva y con plena validez jurídica.
+            </p>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="requirements">
+        <div class="container">
+            <h2 class="section-title">Requisitos para el Divorcio Express</h2>
+            <p class="section-subtitle">Para que el trámite sea viable, deben cumplirse las siguientes condiciones:</p>
+            
+            <div class="requirements-grid">
+                <div class="requirement-card">
+                    <span class="requirement-icon">✓</span>
+                    <h3>Mutuo Acuerdo</h3>
+                    <p>Ambos cónyuges deben estar de acuerdo con la disolución del matrimonio. La decisión debe ser voluntaria y conjunta.</p>
+                </div>
+                
+                <div class="requirement-card">
+                    <span class="requirement-icon">✓</span>
+                    <h3>Sin Hijos Menores</h3>
+                    <p>No deben existir hijos menores de edad ni mayores con discapacidad o que dependan económicamente de los cónyuges.</p>
+                </div>
+                
+                <div class="requirement-card">
+                    <span class="requirement-icon">✓</span>
+                    <h3>Sin Bienes por Repartir</h3>
+                    <p>No debe haber bienes sujetos a reparto dentro de la sociedad conyugal que requieran liquidación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">¿Cómo Funciona el Proceso?</h2>
+            <p class="section-subtitle">Nos encargamos de todos los pasos, tú solo debes estar presente en la firma</p>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Contacto Inicial</h3>
+                    <p>Te contactas con nosotros por WhatsApp o teléfono. Verificamos requisitos y resolvemos tus dudas.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Preparación de Documentos</h3>
+                    <p>Redactamos el acuerdo de divorcio y preparamos toda la documentación necesaria.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Firma en Notaría</h3>
+                    <p>Coordinamos la cita en notaría donde ambos firman el documento ante el notario.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Certificado Listo</h3>
+                    <p>En 15 días hábiles recibes tu divorcio legalmente inscrito y certificado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">¿Por Qué Elegirnos?</h2>
+            <p class="section-subtitle">Experiencia, transparencia y resultados garantizados</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <span class="benefit-icon">⚖️</span>
+                    <h3>Especialistas en Familia</h3>
+                    <p>Abogados con amplia experiencia y trayectoria en derecho de familia en Cali.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="benefit-icon">⚡</span>
+                    <h3>Trámite Ágil</h3>
+                    <p>Proceso completo en 15 días hábiles. Nos encargamos de todo el papeleo.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="benefit-icon">💰</span>
+                    <h3>Precio Justo y Fijo</h3>
+                    <p>Transparencia total: 1 SMLV. Sin costos ocultos ni sorpresas.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="benefit-icon">🤝</span>
+                    <h3>Acompañamiento Total</h3>
+                    <p>Te guiamos en cada paso del proceso con asesoría personalizada.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="benefit-icon">🔒</span>
+                    <h3>Confidencialidad</h3>
+                    <p>Máxima discreción y respeto por tu privacidad en todo momento.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <span class="benefit-icon">✅</span>
+                    <h3>100% Legal</h3>
+                    <p>Trámite completamente legal y válido ante todas las autoridades colombianas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Inicia Tu Proceso Hoy Mismo</h2>
+                <p>Agenda tu consulta gratuita y da el primer paso hacia tu nueva etapa. Te acompañamos con profesionalismo y empatía en este momento importante.</p>
+                
+                <div class="hero-buttons">
+                    <a href="https://wa.me/573225523211?text=Hola,%20necesito%20información%20sobre%20el%20Divorcio%20Express" class="btn-primary">📱 Consulta Gratis por WhatsApp</a>
+                    <a href="tel:+573225523211" class="btn-secondary">📞 Llamar Ahora</a>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📍</div>
+                        <strong>Ubicación</strong>
+                        <p>Calle 5 #38A-08<br>Cali, Valle del Cauca</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📞</div>
+                        <strong>Teléfono</strong>
+                        <a href="tel:+573225523211">+57 322 552 3211</a>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">⏰</div>
+                        <strong>Horario</strong>
+                        <p>Lun - Vie: 8:00 AM - 6:00 PM<br>Sábados: 9:00 AM - 1:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/573225523211?text=Hola,%20necesito%20información%20sobre%20el%20Divorcio%20Express" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        💬
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>PEÑA&CARDONA ABOGADOS</h3>
+                <p>Estudio jurídico especializado en derecho de familia</p>
+                <p>Calle 5 #38A-08, Cali, Valle del Cauca</p>
+                <p>Tel: +57 322 552 3211</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Peña&Cardona Abogados. Todos los derechos reservados.</p>
+                <p>NIT: 901891011 • Registro profesional y ético vigente</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Divorcio Express Cali - Peña&Cardona Abogados",
+        "description": "Servicio de divorcio express por mutuo acuerdo en Cali. Trámite ágil ante notaría en 15 días hábiles. Honorarios fijos: 1 SMLV.",
+        "image": "https://penacardona.com/images/divorcio-express.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Calle 5 #38A-08",
+            "addressLocality": "Cali",
+            "addressRegion": "Valle del Cauca",
+            "postalCode": "760001",
+            "addressCountry": "CO"
+        },
+        "telephone": "+573225523211",
+        "priceRange": "1 SMLV",
+        "openingHours": "Mo-Fr 08:00-18:00, Sa 09:00-13:00",
+        "url": "https://penacardona.com/divorcio-express-cali",
+        "areaServed": {
+            "@type": "City",
+            "name": "Cali"
+        }
+    }
+    </script>
+</body>
+</html>
