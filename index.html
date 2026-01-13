@@ -45,6 +45,106 @@
             background-color: #f8f9fa;
         }
         
+        /* Anuncio Flotante Inicial */
+        .announcement-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(135deg, #142846, #1e3a66);
+            color: white;
+            padding: 3rem 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+            z-index: 10000;
+            max-width: 550px;
+            width: 90%;
+            text-align: center;
+            animation: slideIn 0.5s ease-out;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .announcement-popup:hover {
+            transform: translate(-50%, -50%) scale(1.02);
+            box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6);
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -60%);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        @keyframes slideOut {
+            from {
+                opacity: 1;
+                transform: translate(-50%, -50%);
+            }
+            to {
+                opacity: 0;
+                transform: translate(-50%, -60%);
+            }
+        }
+
+        .announcement-popup.closing {
+            animation: slideOut 0.5s ease-out forwards;
+        }
+
+        .announcement-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            backdrop-filter: blur(5px);
+        }
+
+        .announcement-popup h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #c9a96e;
+            font-family: 'Times New Roman', serif;
+            letter-spacing: 1px;
+        }
+
+        .announcement-popup .highlight {
+            background: linear-gradient(135deg, #c9a96e, #b8956b);
+            color: #142846;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 1rem 0;
+            font-weight: bold;
+            font-size: 1.8rem;
+        }
+
+        .announcement-popup p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .announcement-popup .cta-text {
+            font-size: 0.9rem;
+            color: #c9a96e;
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        .announcement-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        
         /* Header */
         .header {
             position: fixed;
@@ -107,7 +207,7 @@
             text-align: center;
             padding: 0 2rem;
             margin-top: 90px;
-            overflow: hidden; /* Necesario para recortar el video */
+            overflow: hidden;
         }
 
         /* VIDEO DE FONDO */
@@ -121,7 +221,7 @@
             z-index: -2;
         }
 
-        /* OVERLAY SUPERIOR (tu mismo degradado original) */
+        /* OVERLAY SUPERIOR */
         .hero::before {
             content: '';
             position: absolute;
@@ -133,7 +233,7 @@
             z-index: -1;
         }
 
-        /* RAYO RADIAL SUAVE QUE YA TENÍAS */
+        /* RAYO RADIAL SUAVE */
         .hero::after {
             content: '';
             position: absolute;
@@ -226,6 +326,98 @@
             color: #c9a96e;
         }
 
+        /* Sección de Consulta Especializada */
+        .consultation-section {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, #142846, #1e3a66);
+            color: white;
+            text-align: center;
+        }
+
+        .consultation-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .consultation-icon {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+        }
+
+        .consultation-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            font-family: 'Times New Roman', serif;
+            color: #c9a96e;
+        }
+
+        .consultation-section .highlight-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(201, 169, 110, 0.3);
+            border-radius: 15px;
+            padding: 3rem;
+            margin: 3rem 0;
+        }
+
+        .consultation-section .price {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #c9a96e;
+            margin: 1.5rem 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .consultation-section .features {
+            text-align: left;
+            margin: 2rem 0;
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .consultation-section .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .consultation-section .feature-item::before {
+            content: '✓';
+            color: #c9a96e;
+            font-size: 1.5rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .consultation-cta {
+            background: linear-gradient(135deg, #c9a96e, #b8956b);
+            color: #142846;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-top: 2rem;
+            box-shadow: 0 8px 25px rgba(201, 169, 110, 0.4);
+        }
+
+        .consultation-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(201, 169, 110, 0.5);
+            background: linear-gradient(135deg, #d4b078, #c9a96e);
+        }
         
         /* Quote Section (About) */
         .about {
@@ -659,12 +851,41 @@
         
         /* Responsive */
         @media (max-width: 768px) {
+            .announcement-popup {
+                padding: 2rem 1.5rem;
+                width: 95%;
+            }
+
+            .announcement-popup h2 {
+                font-size: 1.5rem;
+            }
+
+            .announcement-popup .highlight {
+                font-size: 1.4rem;
+            }
+
+            .announcement-popup p {
+                font-size: 1rem;
+            }
+
             .hero h1 {
                 font-size: 2.8rem;
             }
             
             .hero .subtitle {
                 font-size: 1.1rem;
+            }
+
+            .consultation-section h2 {
+                font-size: 2rem;
+            }
+
+            .consultation-section .highlight-box {
+                padding: 2rem 1.5rem;
+            }
+
+            .consultation-section .price {
+                font-size: 2.5rem;
             }
             
             .quote-section {
@@ -731,7 +952,7 @@
             padding: 0.6rem 1.1rem;
             border-radius: 999px;
             border: 1px solid rgba(255, 255, 255, 0.7);
-            background: rgba(15, 23, 42, 0.65); /* tono oscuro semitransparente sobre el video */
+            background: rgba(15, 23, 42, 0.65);
             color: #ffffff;
             font-size: 0.9rem;
             text-decoration: none;
@@ -747,7 +968,6 @@
             box-shadow: 0 8px 20px rgba(15, 23, 42, 0.35);
         }
 
-        /* Ajuste leve en pantallas pequeñas */
         @media (max-width: 480px) {
             .hero-link {
                 font-size: 0.8rem;
@@ -758,6 +978,17 @@
     </style>
 </head>
 <body>
+    <!-- Anuncio Flotante Inicial -->
+    <div class="announcement-overlay" id="announcementOverlay"></div>
+    <div class="announcement-popup" id="announcementPopup">
+        <div class="announcement-icon">⚖️</div>
+        <h2>Consulta con Abogado Especialista</h2>
+        <p>Le asignaremos un <strong>abogado especialista en derecho de familia</strong> para atender su caso de manera personalizada y profesional.</p>
+        <div class="highlight">$50.000 COP</div>
+        <p>Primera consulta especializada<br>Evaluación completa de su caso</p>
+        <p class="cta-text">👆 Toque aquí para agendar su cita por WhatsApp</p>
+    </div>
+
     <!-- Header -->
     <header class="header">
         <div class="nav-container">
@@ -778,7 +1009,7 @@
 
             <!-- Botones de áreas específicas de familia -->
             <div class="hero-links">
-                                <a href="divorcio-express-cali.html" class="hero-link">
+                <a href="divorcio-express-cali.html" class="hero-link">
                     Divorcio Express
                 </a>
                 <a href="divorcio-cesacion-efectos-civiles-matrimonio-cali.html" class="hero-link">
@@ -824,7 +1055,52 @@
 
     </section>
 
+    <!-- Sección de Consulta Especializada -->
+    <section class="consultation-section" id="consulta-especializada">
+        <div class="consultation-content">
+            <div class="consultation-icon">👨‍⚖️</div>
+            <h2>Consulta con Abogado Especialista en Familia</h2>
+            
+            <div class="highlight-box">
+                <p style="font-size: 1.2rem; margin-bottom: 1rem;">
+                    Cuando agenda su consulta, <strong>le asignaremos un abogado especialista en derecho de familia</strong> 
+                    que analizará su caso de manera personalizada y profesional.
+                </p>
+                
+                <div class="price">$50.000 COP</div>
+                <p style="font-size: 1rem; opacity: 0.9;">Primera consulta especializada</p>
+                
+                <div class="features">
+                    <div class="feature-item">
+                        Evaluación completa y detallada de su situación legal
+                    </div>
+                    <div class="feature-item">
+                        Asesoría personalizada con abogado experto en familia
+                    </div>
+                    <div class="feature-item">
+                        Orientación sobre el mejor curso de acción para su caso
+                    </div>
+                    <div class="feature-item">
+                        Plan estratégico y estimación de tiempos del proceso
+                    </div>
+                    <div class="feature-item">
+                        Respuesta a todas sus preguntas y dudas legales
+                    </div>
+                </div>
+            </div>
 
+            <a href="https://wa.me/573225523211?text=Hola,%20quiero%20agendar%20una%20consulta%20especializada%20en%20derecho%20de%20familia%20por%20$50.000" 
+               target="_blank" 
+               class="consultation-cta">
+                <img src="whatsapp.png" alt="WhatsApp" style="width: 24px; height: 24px;">
+                Agendar Consulta Ahora
+            </a>
+
+            <p style="margin-top: 2rem; font-size: 0.95rem; opacity: 0.85;">
+                📞 Disponibilidad inmediata | ⚡ Respuesta en menos de 24 horas
+            </p>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section class="about">
@@ -991,6 +1267,30 @@
     </a>
 
     <script>
+        // Anuncio flotante inicial
+        window.addEventListener('DOMContentLoaded', function() {
+            const popup = document.getElementById('announcementPopup');
+            const overlay = document.getElementById('announcementOverlay');
+            
+            // Función para cerrar el anuncio
+            function closeAnnouncement() {
+                popup.classList.add('closing');
+                setTimeout(function() {
+                    popup.style.display = 'none';
+                    overlay.style.display = 'none';
+                }, 500);
+            }
+            
+            // Redirigir a WhatsApp al hacer clic en el anuncio
+            popup.addEventListener('click', function() {
+                window.open('https://wa.me/573225523211?text=Hola,%20quiero%20agendar%20una%20consulta%20especializada%20en%20derecho%20de%20familia%20por%20$50.000', '_blank');
+                closeAnnouncement();
+            });
+            
+            // Cerrar automáticamente después de 5 segundos
+            setTimeout(closeAnnouncement, 5000);
+        });
+
         // Formulario de contacto
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
